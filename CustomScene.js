@@ -140,7 +140,7 @@ export default class CustomScene {
 
   beforeLoadModel({ engine, preload }) {
     //const { BufferGeometry, Group, Object3D } = this.THREE
-    const { SphereBufferGeometry, BufferGeometry, Group, Object3D, AmbientLight } = this.THREE
+    const { Points, ShaderMaterial, LinearFilter, NearestFilter, RGBAFormat, VideoTexture, SphereBufferGeometry, BufferGeometry, Group, Object3D, AmbientLight } = this.THREE
     this.model = new Object3D()
     this.model.position.set(0, 0, 0)
 
@@ -192,9 +192,9 @@ export default class CustomScene {
     })
 
     const mesh = new Points(geometry, material)
-    const scaler = 0.5
-    mesh.scale.set(scaler, scaler, scaler)
-    mesh.position.set(0, 1, 0)
+    const scaler = 3.3
+    mesh.scale.set(scaler, scaler, scaler*2)
+    mesh.position.set(-1.9, -1.25, -3)
     this.model.add(mesh)  
   }
 
