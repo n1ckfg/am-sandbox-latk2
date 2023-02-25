@@ -24,31 +24,6 @@ export default {
  
   file: 'artifact',
 
-  latk: {
-    // starting the file with a / loads it from the sandbox src dir.
-    file: '/latk.js',
-
-    layers: [
-      { mat: { color: 0xeeff55 }, pos: [-0.01, 0, 0] },
-      { mat: { color: 0x33ff33 }, pos: [0, 0, -0.1] },
-      { mat: { color: 0x00aaff }, pos: [0, 0.05, 0.1] },
-    ],
-  },
-
   audio: '/artifact.mp3',
- 
-  /*
-  cam: {
-    y: 3,
-  },
-
-  lookat: {
-    y: -1.7,
-  },
-
-  orbit: {
-    max: 15,
-  },
-  */
 
 }
