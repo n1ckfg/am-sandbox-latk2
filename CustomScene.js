@@ -140,7 +140,7 @@ export default class CustomScene {
 
   beforeLoadModel({ engine, preload }) {
     //const { BufferGeometry, Group, Object3D } = this.THREE
-    const { BufferGeometry, Group, Object3D, AmbientLight } = this.THREE
+    const { SphereBufferGeometry, BufferGeometry, Group, Object3D, AmbientLight } = this.THREE
     this.model = new Object3D()
     this.model.position.set(0, 0, 0)
 
